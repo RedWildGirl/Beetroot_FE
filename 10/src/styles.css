@@ -1,0 +1,280 @@
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.header {
+    padding: 35px 0;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-list,
+.btn-list,
+.hero-btn-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    margin-right: 27px;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.btn-item {
+    padding: 0 7px;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-white {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    padding: 10px 25px;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background: #FF9900;
+    border-radius: 4px;
+    padding: 10px 25px;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 111px;
+}
+
+.hero-column {
+    width: 50%;
+}
+
+.hero-title {
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+    margin-bottom: 30px;
+}
+
+.text-holder {
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837;
+    margin-bottom: 45px;
+}
+
+.hero-btn-list li {
+    padding: 0 15px;
+    width: auto;
+}
+
+.btn-xl {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 14px 49px;
+    margin: 0 15px;
+}
+
+.video-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #FF9900;
+    display: block;
+    padding-top: 15px;
+}
+
+.video-link::before {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 13px solid #FF9900;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.title-holder {
+    height: 108px;
+    width: 539px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+}
+
+.title-holder h2 {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #2F281E;
+}
+
+.ftrs-list ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.ftrs-list li {
+    width: 25%;
+}
+
+.icon-row {
+    margin-bottom: 30px;
+}
+
+.title-row {
+    margin-bottom: 13px;
+}
+
+.text-row {
+    margin-bottom: 60px;
+}
+
+.title-row h3 {
+    font-size: 22px;
+    line-height: 33px;
+    color: #2F281E;
+    margin: 0;
+}
+
+.text-row p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    width: 240px;
+    }
+
+.btn-holder {
+    margin: 0 auto;
+    width: max-content;
+    margin-bottom: 210px;
+}
+
+.footer-border {
+    width: 1109px;
+    height: 1px;
+    background: rgba(188, 208, 229, 0.496913);
+    margin-bottom: 105px;
+}
+
+.footer-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 83px;
+}
+
+.footer-holder ul {
+    list-style: none;
+}
+
+.footer-column {
+    width: 25%;
+    height: 202px;
+}
+
+.logo-holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.quick-links,
+.legal-stuff,
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.quick-links a,
+.legal-stuff a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #544837;
+    margin: 0;
+    text-decoration: none;
+}
+
+.sign-up {
+    height: 48px;
+    width: 275px;
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 29px;
+}
+
+.footer-btn-holder {
+    margin-bottom: 15px;
+}
+
+.btn-sign {
+    padding: 8px 22px;
+}
