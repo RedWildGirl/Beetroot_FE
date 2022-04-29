@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h2,
+p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #000000;
+}
+
+.container {
+    max-width: 1840px;
+    width: 100%;
+    padding: 12px 0;
+    margin: 0 auto;
+}
+
+.navigation-holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lang p {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.nav-item {
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.introduction h2::before {
+    content: '\00B9  ';
+}
+
+.core-comp h2::before {
+    content: '\00B2  ';
+}
+
+.react-fund h2::before {
+    content: '\00B3  ';
+}
+
+.react-list {
+    list-style: none;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.grey-text {
+    background-color: #EDEDED;
+}
+
+.react-item:before {
+    content: "+";
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.text-input h2::before {
+    content: '\2074  ';
+}
