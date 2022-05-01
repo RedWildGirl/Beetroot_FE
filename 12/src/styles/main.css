@@ -91,25 +91,34 @@ a {
     margin-bottom: 15px;
 }
 
-main .container {
-    padding-top: 55px;
-}
-
 main {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .sidebar {
-    width: 100%;
-    position: fixed;
-    top: 87px;
+    width: 40%;
+    position: relative;
     z-index: 1;
+    left: 0;
+}
+
+.sidebar-list {
+    position: sticky;
+    top: 150px;
 }
 
 .sidebar-item {
     list-style: none;
     padding-bottom: 93px;
     border-bottom: #EDEDED 1px solid;
+}
+
+.sidebar-item::after {
+    width: 100%;
+    border-bottom: #EDEDED 1px solid;
+    z-index: 1;
 }
 
 .introduction h2::before {
@@ -133,11 +142,10 @@ main {
 }
 
 .content {
-    margin-left: 40%;
     padding-top: 60px;
-    position: absolute;
     z-index: 2;
     background: transparent;
+    width: 60%;
 }
 
 .content-list {
@@ -176,13 +184,6 @@ main {
     background-color: #EDEDED;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-}
-
-.react-item:before {
-    content: "+";
-    margin-right: 4px;
-    font-weight: bold;
-    font-size: 36px;
 }
 
 .img-holder {
