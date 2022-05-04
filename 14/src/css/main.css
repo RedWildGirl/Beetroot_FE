@@ -1,0 +1,275 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.label,
+p {
+    color: #969696;
+    ;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.page {
+    position: absolute;
+    padding-top: 5%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    padding: 20px 20px;
+}
+
+.holder {
+    width: 540px;
+    height: 590px;
+    background-color: #FFFFFF;
+    margin: 0 21px;
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.heading {
+    line-height: 32px;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.list-item {
+    list-style: none;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.label {
+    font-size: 15px;
+    line-height: 22px;
+    display: block;
+    color: #545454;
+}
+
+.input {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 38px;
+    width: 245px;
+    margin-bottom: 7px;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid #007BFF;
+}
+
+.three {
+    width: 100%;
+}
+
+.three .input {
+    width: 500px;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.gender-list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 5px;
+}
+
+.gender-item {
+    width: 73px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 27px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gender-item:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.checkbox:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.gender-item label,
+.checkbox {
+    cursor: pointer;
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.select {
+    appearance: none;
+    padding-left: 4px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #969696;
+    font-family: 'Inter';
+    letter-spacing: -0.1px;
+    background-image: url(../img/Right.svg);
+    background-position: calc(100% - .01rem), 100% 0;
+    background-repeat: no-repeat;
+}
+  
+.select:focus {
+    border-color: blue;
+    outline: 0;
+}
+
+.textarea {
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.privacy-holder {
+    border-bottom: solid 1px #E4E4E4;
+    padding-bottom: 20px;
+}
+
+.privacy-holder p,
+.login-holder p {
+    text-align: center;
+}
+
+.login-holder {
+    margin: 0 auto;
+}
+
+.login-text {
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+}
+
+.login-link {
+    font-weight: bold;
+}
+
+.account {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.account-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.right-column {
+    margin-left: 20px;
+}
+
+.file-label {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 30px;
+    width: 138px;
+    background-image: url(../img/photo-camera.svg);
+    background-position: calc(100% - .3rem), 100% 0;
+    background-repeat: no-repeat;
+    margin-bottom: 9px;
+}
+
+.trashcan {
+    border-radius: 6px;
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/small-trashcan.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 11px;
+    left: 148px;
+}
+
+.last {
+    width: 150px;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="page">
+
+                <div class="holder">
+
+                    <div class="container">
+
+                        <section class="personal-info">
+
+                            <div class="heading-holder">
+                                <h1 class="heading">Create an Account</h1>
+                            </div>
+    
+                            <div class="personal-info-holder">
+    
+                                <ul class="list">
+    
+                                    <li class="list-item">
+                                        <label class="label" for="first-name">First Name</label>
+                                        <input class="input" type="text" name="first-name" id="first-name" autofocus>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <label class="label" for="last-name">Last Name</label>
+                                        <input class="input last-name" type="text" name="last-name" id="last-name" >
+                                    </li>
+    
+                                    <li class="list-item three">
+                                        <label class="label" for="email">E-mail</label>
+                                        <input class="input" type="email" name="email" id="email">
+                                    </li>
+    
+                                </ul>
+    
+                            </div>
+    
+                            <div class="text-holder">
+                                <p class="text">We'll never share your email with anyone else.</p>
+                            </div>
+    
+                        </section>
+    
+                        <section class="gender-holder">
+    
+                            <ul class="gender-list">
+            
+                                <li class="gender-item">
+                                    <label class="label" for="male" name="male">Male
+                                        <input class="checkbox" type="radio" name="1" id="male">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+            
+                                <li class="gender-item">                            
+                                    <label class="label" for="female" name="female">Female
+                                        <input class="checkbox" type="radio" name="1" id="female">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+            
+                            </ul>        
+            
+                        </section>
+    
+                        <section class="location-holder">
+    
+                            <ul class="list">
+    
+                                <li class="list-item">
+                                    <label class="label" for="country">Country</label>
+                                    <select class="input select" name="country" id="country">
+                                        <option value="0">Select</option>
+                                    </select>
+                                </li>
+    
+                                <li class="list-item">
+                                    <label class="label" for="city">City</label>
+                                    <input class="input city" type="text" name="city" id="city">
+                                </li>
+    
+                                <li class="list-item three">
+                                    <textarea class="input textarea" name="textarea" id="textarea"></textarea>
+                                </li>
+    
+                            </ul>
+    
+                        </section>
+    
+                        <section class="privacy-holder">
+                            <p class="text">By clicking the 'Sign Up' button, you confirm that you 
+                                accept our
+                                <br>
+                                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                        </section>
+    
+                        <section class="login-holder">
+                            <p class="login-text">Have an account? <a class="login-link" href="#">Log in</a></p>
+                        </section>
+
+                    </div>
+
+                </div>
+
+                <div class="holder">
+
+                    <div class="container">
+
+                        <div class="heading-holder">
+                            <h1 class="heading">Profile</h1>
+                        </div>
+    
+                        <section class="account">
+        
+                            <div class="account-column">
+                                <a href="#"></a><img src="./src/img/userpic.svg" alt="User Pic">
+                            </div>
+    
+                            <div class="account-column right-column">
+                                <span class="custom-file-upload"></span>
+                                <span class="trashcan"></span>
+                                <input class="file-upload" type="file" name="file" id="file">
+                                <label class="file-label" for="file">Up to 1 MB &#40;300x300 px&#41;</label>
+                            </div>
+                        
+                        </section>
+        
+                        <section class="input-holder">
+        
+                            <ul class="list">
+        
+                                <li class="list-item">
+                                    <label class="label" for="name">Name</label>
+                                    <input class="input" type="text" name="name" id="name" autofocus>
+                                </li>
+        
+                                <li class="list-item">
+                                    <label class="label" for="email">E-mail</label>
+                                    <input class="input" type="email" name="email" id="email">
+                                </li>
+        
+                                <li class="list-item">
+                                    <label class="label" for="country">Country</label>
+                                    <select class="input select" name="country" id="country">
+                                        <option value="0">Select</option>
+                                    </select>
+                                </li>
+        
+                                <li class="list-item">
+                                    <label class="label" for="city">City</label>
+                                    <input class="input city" type="text" name="city" id="city">
+                                </li>
+        
+                                <li class="list-item">
+                                    <label class="label" for="name">Zip Code</label>
+                                    <input class="input" type="text" name="zipcode" id="zipcode">
+                                </li>
+        
+                                <li class="list-item">
+                                    <label class="label" for="tel">Phone Number</label>
+                                    <input class="input" type="tel" name="tel" id="tel">
+                                </li>
+        
+                            </ul>
+        
+                            <input class="input last" type="text" name="last" id="last">
+        
+                        </section>
+
+                    </div>
+    
+                </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
