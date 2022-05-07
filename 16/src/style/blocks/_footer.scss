@@ -1,0 +1,41 @@
+.footer {
+    background-color: $dark-blue;
+    padding-bottom: 45px;
+
+    .logo-line {
+        padding-top: 40px;
+    }
+
+    .icon-line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .footer-icon-holder {
+            background-color: #EFEEF3;
+            height: 38px;
+            width: 38px;
+            border-radius: 5px;
+            margin: 0 4px;
+            position: relative;
+
+            .footer-icon {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 22px;
+                height: 22px;
+                // border: solid 1px red;
+                position: absolute;
+
+                .svg-sprite {
+                    background-image: url(src\images\svg-sprite-hardware.svg);
+                    display: inline-block;
+                    width: 21px;
+                    height: 21px;
+                    z-index: 25;
+                }
+            }
+        }
+    }
+}

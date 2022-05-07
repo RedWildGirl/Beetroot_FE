@@ -1,0 +1,87 @@
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 69px;
+
+    .text-holder {
+        padding-top: 55px;
+
+        .upper-text {
+            font-size: 16px;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #7690A8;
+            margin: 0 0 17px;
+        }
+
+        .lower-text {
+            font-family: $nunito;
+            font-size: 40px;
+            line-height: 52px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: left;
+            margin-bottom: 35px;
+        }
+
+        .upper-text p,
+        .lower-text h1 {
+            margin: 0;
+        }
+    }
+
+    .hero-section-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .hero-column {
+            max-width: 360px;
+            width: 33%;
+            border: 1px solid rgba(21, 101, 216, 0.1);
+            border-radius: 6px;
+
+            .column-container {
+                margin: 41px 45px 46px 41px;
+
+                .icon-holder {
+                    width: 64px;
+                    height: 64px;
+                    border: 1px solid rgba(21, 101, 216, 0.1);
+                    border-radius: 16px;
+                    margin-bottom: 28px;
+                    position: relative;
+
+                    .hero-icon {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    .hero-icon:hover .path {
+                        fill: $hover-color;
+                    }
+                }
+
+                .hero-column:hover,
+                .icon-holder:hover {
+                    border-color: $hover-color;
+                }
+
+            }
+
+        }
+
+        .hero-column:hover {
+            border-color: $hover-color;
+        }
+
+        .link-holder a {
+            text-decoration: none;
+        }
+
+    }
+
+}

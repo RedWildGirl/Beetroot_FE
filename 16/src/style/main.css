@@ -1,0 +1,169 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: "Roboto", sans-serif;
+  color: #16133D;
+  margin: 0;
+}
+
+.container {
+  max-width: 1155px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-holder {
+  padding-top: 42px;
+  padding-bottom: 45px;
+  border-bottom: solid 1px #EFEEF3;
+}
+
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 69px;
+}
+
+.hero-section .text-holder {
+  padding-top: 55px;
+}
+
+.hero-section .text-holder .upper-text {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7690A8;
+  margin: 0 0 17px;
+}
+
+.hero-section .text-holder .lower-text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.hero-section .text-holder .upper-text p,
+.hero-section .text-holder .lower-text h1 {
+  margin: 0;
+}
+
+.hero-section .hero-section-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-section .hero-section-holder .hero-column {
+  max-width: 360px;
+  width: 33%;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 6px;
+}
+
+.hero-section .hero-section-holder .hero-column .column-container {
+  margin: 41px 45px 46px 41px;
+}
+
+.hero-section .hero-section-holder .hero-column .column-container .icon-holder {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.hero-section .hero-section-holder .hero-column .column-container .icon-holder .hero-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero-section .hero-section-holder .hero-column .column-container .icon-holder .hero-icon:hover .path {
+  fill: #52C29D;
+}
+
+.hero-section .hero-section-holder .hero-column .column-container .hero-column:hover,
+.hero-section .hero-section-holder .hero-column .column-container .icon-holder:hover {
+  border-color: #52C29D;
+}
+
+.hero-section .hero-section-holder .hero-column:hover {
+  border-color: #52C29D;
+}
+
+.hero-section .hero-section-holder .link-holder a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #16133D;
+  padding-bottom: 45px;
+}
+
+.footer .logo-line {
+  padding-top: 40px;
+}
+
+.footer .icon-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer .icon-line .footer-icon-holder {
+  background-color: #EFEEF3;
+  height: 38px;
+  width: 38px;
+  border-radius: 5px;
+  margin: 0 4px;
+  position: relative;
+}
+
+.footer .icon-line .footer-icon-holder .footer-icon {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+}
+
+.footer .icon-line .footer-icon-holder .footer-icon .svg-sprite {
+  background-image: url(src\images\svg-sprite-hardware.svg);
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  z-index: 25;
+}
+/*# sourceMappingURL=main.css.map */
