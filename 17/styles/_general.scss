@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $poppins;
+    color: $light-black;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background: $yellow;
+    border-radius: 4px;
+    padding: 10px 25px;
+}
+
+.btn-xl {
+    @extend .btn;
+
+    @include media ('>=768px') { 
+    padding: 14px 34px;
+    }
+}
