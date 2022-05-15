@@ -1,0 +1,32 @@
+.opening {
+    .container {
+        margin-bottom: 48px;
+
+        @include media ('>=1024px') {
+            margin-bottom: 130px;
+        }
+    }
+}
+
+.pseudo-title-holder {
+    margin-bottom: 39px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    @include media ('>=1024px') {
+        margin-bottom: 48px;
+    }
+}
+
+.opening-title-holder {
+    margin-bottom: 52px;
+    font-size: 33px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+
+    @include media ('>=1024px') {
+        margin-bottom: 64px;
+    }
+}
