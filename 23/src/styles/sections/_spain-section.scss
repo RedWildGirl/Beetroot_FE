@@ -1,0 +1,65 @@
+.spain-section {
+    padding: 110px 0 40px;
+
+    @include media ('>=768px') {
+        padding: 140px 0 85px;
+    }
+
+    @include media ('>=1024px') {
+        padding: 227px 0 99px;
+    }
+
+    .container {
+        @include media ('>=768px') {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &.right-column {
+            @include media ('>=768px') {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    h3,
+    p {
+        color: $opacity-white;
+    }
+}
+
+.spain-column {
+    padding: 49px 32px 50px;
+    background-color: $opacity-black;
+
+    @include media ('>=768px') {
+        width: 50%;
+    }
+}
+
+.spain-pseudo-title {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    margin-bottom: 23px;
+}
+
+.spain-title {
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.spain-text-holder {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 46px;
+}
+
+.btn-spain {
+    @extend .btn-combined;
+
+    margin-bottom: 0;
+}

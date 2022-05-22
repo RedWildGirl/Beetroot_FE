@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $josefin;
+    color: $white;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1173px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: $aleo;
+    font-size: 36px;
+    line-height: 26px;
+}
+
+.text-holder {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.btn {
+    font-family: $aleo;
+    width: 140px;
+    height: 55px;
+    background: $blue;
+    color: $white;
+    font-size: 14px;
+    line-height: 26px;
+    border: 2px solid $white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+
+    @include media ('>=768px') {
+        width: 153px;
+        height: 63px;
+    }
+}
+
+.btn-combined {
+    @extend .btn;
+
+    border: none;
+    width: 228px;
+    height: 60px;
+    font-size: 16px;
+    margin-bottom: 35px;
+            
+    &::before {
+    content: url('../images/rectangle-8.svg');
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 2px;
+        z-index: -1;
+    }
+}
+
+.arc-1 {
+    @include media ('>=768px') {
+        position: absolute;
+        border-radius: 50%;
+        border-top: 1px solid #fff;
+        width: 285px;
+        height: 99px;
+        top: -18px;
+        left: 13%;
+        z-index: 1;
+    }
+    
+    @include media ('>=1024px') {
+        width: 359px;
+        left: 15%;
+        top: -15px;
+    }
+
+    @include media ('>=1440px') {
+        left: 17%;
+    }
+}

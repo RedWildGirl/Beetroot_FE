@@ -1,0 +1,44 @@
+footer {
+    background-color: $black;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-logo-holder {
+        max-width: 196px;
+        padding-top: 60px;
+    
+        @include media ('>=1024px') {
+            padding-top: 120px;
+        }
+    }
+}
+
+.footer-icon-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    margin: 0 -10px 26px;
+
+    @include media (">=1024px") {
+        margin: 0 -10px 47px;
+    }
+}
+
+.footer-icon-link {
+    text-decoration: none;
+    color: $opacity-white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin: 0 10px;
+
+    &:hover {
+        color: $blue;
+    }
+}

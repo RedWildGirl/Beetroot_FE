@@ -1,0 +1,94 @@
+.search {
+    min-height: 100vh;
+    position: relative;
+
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @include media ('>=768px') {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }    
+}
+
+.big-logo-holder {    
+    margin-bottom: 48px;
+}
+
+.input-holder {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media ('>=768px') {
+        margin-bottom: 70px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include media ('>=1024px') {
+        margin-bottom: 107px;
+    }
+
+    .input-search {
+        width: 270px;
+        height: 55px;
+        background-color: $white;
+        text-align: center;
+        font-size: 10px;
+        line-height: 20px;
+        letter-spacing: 2.8px;
+        border: none;
+        margin-bottom: 15px;
+
+        @include media ('>=768px') {
+            width: 503px;
+            height: 63px;
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.icon-search {
+    margin-left: 10px;
+    width: 22px;
+    height: 24px;
+}
+
+.scroll {
+    text-align: center;
+
+    .scroll-list {
+        list-style: none;
+        padding-inline-start: 0;
+
+        a {
+            text-decoration: none;
+            color: $white;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .scroll-item {
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 2.8px;      
+    }
+
+    .icon-down {
+        width: 17px;
+        height: 11px;
+    }
+}
