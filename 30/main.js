@@ -133,3 +133,14 @@ function addNotPurchased () {
     return addAllCosts;
 }
 console.log(addNotPurchased());
+
+let sortingChoice = prompt("Let's sort our list. if you want to see the cheapest products first, print '+', if you want to see the most expensive - print '-'.");
+function sortProductList() {
+    if (sortingChoice === "+") {
+        purchaseList.sort((a, b) => b.totalCost - a.totalCost);
+    } else {
+        purchaseList.sort((a, b) => a.totalCost - b.totalCost);
+    }
+    console.log(purchaseList);
+}  
+sortProductList();
