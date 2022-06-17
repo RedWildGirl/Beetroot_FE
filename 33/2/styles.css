@@ -1,0 +1,22 @@
+.table_sort th {
+    color: black;
+    cursor: pointer;
+}
+
+.table_sort td,
+.table_sort th {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}

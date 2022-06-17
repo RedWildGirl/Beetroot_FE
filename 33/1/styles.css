@@ -1,0 +1,27 @@
+.text-holder {
+    opacity: 1;
+    visibility: visible;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: tomato;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.text-holder.disabled {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.js-input {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.js-input.active {
+    opacity: 1;
+    visibility: visible;
+    height: 100px;
+    width: 150px;
+}
