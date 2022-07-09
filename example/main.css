@@ -1,0 +1,42 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "first first second third"
+        "first first fourth fifth"
+    ;
+}
+
+.img {
+    width: 100%;
+}
+
+.grid_item-1 {
+    grid-area: first;
+}
+
+.grid-item-2 {
+    grid-area: second;
+}
+
+.grid-item-3 {
+    grid-area: third;
+}
+
+.grid-item-4 {
+    grid-area: fourth;
+}
+
+.grid-item-5 {
+    grid-area: fifth;
+}
