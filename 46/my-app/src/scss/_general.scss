@@ -1,0 +1,87 @@
+@import "./mixins";
+@import "./vars";
+@import "../components/Blocks/Header/header";
+@import "../components/Sections/Hero-Section/hero-section";
+@import "../components/Sections/Ftrs-Section/ftrs-section";
+@import "../components/Sections/Design-Section/design-section";
+@import "../components/Blocks/Footer/footer";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $poppins;
+    color: $light-black;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    background: $yellow;
+    border-radius: 4px;
+    padding: 10px 25px;
+}
+
+.btn-xl {
+    @extend .btn;
+
+    @include respond-to ('tablet') { 
+    padding: 14px 34px;
+    }
+}
+
+.section-container {
+    margin-bottom: 30px;
+
+    @include respond-to ('tablet') {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    @include respond-to ('laptop') {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 35px;
+        margin-bottom: 111px;
+    }
+}
+
+.section-column {
+    @include respond-to('tablet') {
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    @include respond-to ('laptop') {
+        width: 50%;
+        padding: 0 32px;
+    }
+}

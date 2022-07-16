@@ -1,0 +1,71 @@
+.design-section {
+    .pseudo-title,
+    .text {
+        font-size: 10px;
+        line-height: 20px;
+
+        @include respond-to ('tablet') {
+            font-size: 11px;
+        }
+
+        @include respond-to ('laptop') {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+    title {
+        font-size: 25px;
+        line-height: 35px;
+
+        @include respond-to('tablet') {
+            font-size: 30px;
+            line-height: 45px;
+        }
+
+        @include respond-to ('laptop') {
+            font-size: 36px;
+            line-height: 54px;
+        }
+    }
+
+    .column-list {
+        list-style: none;
+        padding-inline-start: 0;
+
+        li {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.section-container {
+    @extend .container;
+}
+
+.reverse {
+    @include respond-to ('tablet') {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.product-column {
+    position: relative;
+
+    li {
+        margin: 0 0 12px 50px;
+
+        @include respond-to ('desktop') {
+            margin: 0 0 24px 100px;
+        }
+
+        &::before {
+            content: url('../../../images/orange-icon-check.svg');
+            display: block;
+            position: absolute;
+            left: 5px;
+        }
+    }
+}
+    

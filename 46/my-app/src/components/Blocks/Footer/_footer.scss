@@ -1,0 +1,121 @@
+.footer {
+    .container {
+        border-top: solid 1px #979797;
+        padding-top: 25px;
+        margin-bottom: 25px;
+
+        @include respond-to ('tablet') {
+            padding-top: 50px;
+        }
+
+        @include respond-to ('laptop') {
+            padding-top: 102px;
+        }
+    }
+}
+
+.footer-holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to ('tablet') {
+        flex-direction: row;
+        gap: 55px;
+    }
+
+    @include respond-to ('laptop') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 83px;
+    }
+}
+
+.links-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+
+    @include respond-to ('laptop') {
+        justify-content: flex-end;
+        width: 40%;
+        margin-right: -25px;
+    }
+
+    ul {
+        list-style: none;
+        padding-inline-start: 0;
+
+        @include respond-to ('tablet') {
+            margin-right: 25px;
+        }
+
+        @include respond-to('laptop') {
+            margin-right: 70px;
+        }
+
+        a {
+            color: $black;
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 23px;
+
+            @include respond-to ('tablet') {
+                font-size: 15px;
+                line-height: 28px;
+            }
+
+            @include respond-to ('laptop') {
+                font-size: 16px;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    @include respond-to('tablet') {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    @include respond-to('laptop') {
+        padding-top: 40px;
+        align-items: center;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .contact-holder {
+        margin-bottom: 20px;
+
+        @include respond-to ('laptop') {
+            margin-right: -70px;
+        }
+    }
+
+    .sign-up {    
+        background: #FFFFFF;
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        
+        @include respond-to ('laptop') {
+            width: 235px;
+            height: 48px;
+        }
+    }
+
+    .contact-btn-holder {
+        @include respond-to ('laptop') {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.ftrs-section {
+    .container {
+        margin-bottom: 75px;
+
+        @include respond-to ('tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        @include respond-to ('laptop') {
+            flex-direction: row-reverse;
+            margin-bottom: 210px;
+        }
+
+        .btn-holder {
+            width: max-content;
+            margin: 0 auto;
+        }
+    }
+}
+
+.title-holder {
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+
+    @include respond-to ('tablet') {
+        height: 70px;
+        width: 100%;
+        margin-bottom: 27px;
+    }
+
+    @include respond-to ('laptop') {
+        height: 108px;
+        width: 539px;
+        margin-bottom: 54px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+
+        @include respond-to ('tablet') {
+            font-size: 26px;
+            line-height: 44px;
+        }
+
+        @include respond-to ('laptop') {
+            font-size: 36px;
+            line-height: 54px;
+        }
+    }
+}
+
+.ftrs-list {
+    margin-bottom: 25px;
+
+    @include respond-to ('tablet') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ftrs-column {
+        @include respond-to ('tablet') {
+            width: 50%;
+            margin-bottom: 11px;
+        }
+
+        @include respond-to('laptop') {
+            width: 25%;
+        }
+    }
+}
+
+.icon-holder {
+    width: 30px;
+    height: 20px;
+    margin-bottom: 15px;
+
+    @include respond-to ('tablet') {
+        width: 40px;
+        height: 30px;
+        margin-bottom: 25px;
+    }
+
+    @include respond-to ('laptop') {
+        width: 51px;
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .ftrs-icon {
+        width: 100%;
+    }
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+
+    @include respond-to ('tablet') {
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 13px;
+    }
+
+    @include respond-to ('laptop') {
+    font-size: 26px;
+    line-height: 44px;
+    margin-bottom: 13px;
+    }
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+
+    @include respond-to ('tablet') {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 13px;
+    }
+
+    @include respond-to ('laptop') {
+    font-size: 26px;
+    line-height: 44px;
+    margin-bottom: 13px;
+    }
+
+}

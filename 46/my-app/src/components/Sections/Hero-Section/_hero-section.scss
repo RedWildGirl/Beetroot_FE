@@ -1,0 +1,83 @@
+.hero-title {
+    color: $black;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include respond-to ('tablet') {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+
+    @include respond-to ('laptop') {
+        font-size: 44px;
+        line-height: 54px;
+        text-align: left;
+    }
+}
+
+.text-holder {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 25px;
+
+    @include respond-to ('tablet') {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    @include respond-to ('laptop') {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 45px;
+    }
+}
+
+.section-container {
+    @include respond-to ('tablet') {
+        flex-direction: row-reverse;
+    }
+}
+
+.hero-btn-list {
+    list-style: none;
+    width: max-content;
+    margin: 0 auto;
+    padding-inline-start: 0;
+    
+    .video-link {
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        color: $yellow;
+        display: block;
+        padding-top: 14px;
+        margin-left: -2px;
+
+        @include respond-to ('tablet') {
+            margin-left: 10px;
+        }
+
+        &::before {
+            content: '';
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 13px solid $yellow;
+            margin-right: 5px;
+            display: block;
+            float: left;
+        }
+    }
+
+    @include respond-to ('tablet') {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-inline-start: 0;
+    }
+}
